@@ -307,9 +307,9 @@ def parse_app_details(soup):
             price = None
 
     free = (price == '0')
-
+    
     additional_info_data = parse_additional_info(
-        soup.select_one('.xyOfqd'))
+        soup.select_one('.wSaTQd'))
 
     offers_iap = bool(additional_info_data.get('iap_range'))
 
